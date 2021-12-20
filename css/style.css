@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+/* General Start */
+
+body{
+    background: #24252A;
+    color: #FFF;
+}
+
+li,a,button{
+    font-weight: 500;
+    font-size: 1rem;
+    color: #ededed;
+    text-decoration: none;
+}
+
+.grid-container{
+    display: grid;
+    place-content: center;
+}
+
+
+/* General End */
+
+/* Navbar Start */
+
+header{
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    height: 80px;
+    border-bottom: 1px solid #aaaa;
+}
+
+.logo{
+    cursor: pointer;
+}
+
+.nav .nav__links{
+    list-style: none;
+}
+
+.nav .nav__links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav .nav__links li a{
+    transition: all 0.3 ease 0s;
+}
+
+.nav .nav__links li a:hover{
+    color: #0088a9;
+}
+
+.cta{
+    padding: 9px 25px;
+    background: rgba(0, 136, 169, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition:  all 0.3 ease 0s;
+}
+
+.cta:hover{
+    background: rgba(0, 136, 169, 0.8);    
+}
+
+/* Navbar End */
+
+/* Main Start */
+
+main{
+    margin: 60px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 14px;
+}
+
+.game-container{
+    display: flex;
+    text-align: center;
+    max-width: 900px;
+    gap: 10px;
+    padding: 20px;
+    background: #373942;
+    outline: 1px solid #fff;
+    border-radius: 1rem;
+}
+
+.game-container figure{
+    display: flex;
+    place-content: center;
+    padding-top: 20px;
+}
+
+#player-img,#machine-img{
+    width: 50%;
+    min-width: 100px;
+}
+
+.game-buttons{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 80px;
+    padding: 20px;
+    background: #373942;
+    outline: 1px solid #fff;
+    border-radius: 1rem;
+}
+
+.game-vs{
+    max-width: 150px;
+    align-self: center;
+}
+
+.game-buttons .action-button{
+    width: 100px;
+    border-radius: 50%;
+    outline: 2px solid #45ffd3;
+}
+
+.game-buttons .action-button img{
+    padding: 16px;
+}
+
+#result{
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+/* Main End */
+
+
+/* Media Query */
+
+@media screen and (max-width:540px) {
+    *{
+        font-size: 14px;
+    }
+
+    header{
+        padding: 30px 5%;
+    }
+
+    .nav .nav__links li{
+        margin-bottom: 10px;
+    }
+
+
+    .game-buttons{
+        gap: 10px;
+    }
+
+    .game-buttons .action-button{
+        width: 80px;
+    }
+}

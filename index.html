@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--    CSS     -->
+
+    <link rel="icon" type="image/x-icon" href="./assets/ZeroLogo.jpg">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+
+    <title>Rock Paper Scissors!</title>
+</head>
+<body>
+
+    <header>
+        <img class="logo" src="./assets/ZeroLogo.jpg" alt="Logo">
+        <nav class="nav">
+            <ul class="nav__links">
+                <li><a href="/">Home</a></li>
+                <li><a href="https://zerobl21.github.io/Portfolio/">Portfolio</a></li>
+            </ul>
+        </nav>
+        <a class="cta" href="#">Repository</a>
+    </header>
+    
+    <main>
+
+        <div class="grid-container">
+            <div class="game-container">
+                <div>
+                    <h2>Player</h2>
+                    <figure>
+                        <img id="player-img" src="./assets/question.png" alt="Player-election">
+                    </figure>
+                </div>
+                
+                <div class="game-vs"><img src="./assets/vs.png" alt="vs"></div>
+                
+                <div>
+                    <h2>Machine</h2>
+                    <figure>
+                        <img id="machine-img" src="./assets/question.png" alt="Machine-election">
+                    </figure>
+                </div>
+            </div>
+
+            <div class="game-buttons">
+                <span id="result">Resultado</span>
+            </div>
+
+            <div class="game-buttons">
+                <button class="action-button" id="rock"><img src="./assets/op1.png"></button>
+                <button class="action-button" id="paper"><img src="./assets/op2.png"></button>
+                <button class="action-button" id="scissors"><img src="./assets/op3.png"></button>
+            </div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>
