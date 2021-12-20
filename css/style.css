@@ -38,10 +38,12 @@ header{
 
 .logo{
     cursor: pointer;
+    width: 60px;
 }
 
 .nav .nav__links{
     list-style: none;
+    text-align: center;
 }
 
 .nav .nav__links li{
@@ -127,6 +129,15 @@ main{
     padding: 16px;
 }
 
+.game-result{
+    text-align: center;
+    margin-top: 80px;
+    padding: 20px;
+    background: #373942;
+    outline: 1px solid #fff;
+    border-radius: 1rem;
+}
+
 #result{
     font-size: 1.5rem;
     text-align: center;
@@ -138,9 +149,14 @@ main{
 /* Media Query */
 
 @media screen and (max-width:540px) {
+    
+    /* General Start */
+    
     *{
         font-size: 14px;
     }
+
+    /* Header Start */
 
     header{
         padding: 30px 5%;
@@ -150,6 +166,9 @@ main{
         margin-bottom: 10px;
     }
 
+    /* General End */
+
+    /* Main Start */
 
     .game-buttons{
         gap: 10px;
@@ -158,4 +177,11 @@ main{
     .game-buttons .action-button{
         width: 80px;
     }
+
+    #Result{
+        font-size: 1.3rem;
+    }
+
+    /* Main End */
+
 }
