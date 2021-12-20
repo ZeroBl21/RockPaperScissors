@@ -4,6 +4,7 @@
 /* General Start */
 
 body{
+    overflow: hidden;
     background: #24252A;
     color: #FFF;
 }
