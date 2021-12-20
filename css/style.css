@@ -52,7 +52,7 @@ header{
 }
 
 .nav .nav__links li a{
-    transition: all 0.3 ease 0s;
+    transition: all 0.3s ease 0s;
 }
 
 .nav .nav__links li a:hover{
